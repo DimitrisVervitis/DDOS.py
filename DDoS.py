@@ -30,6 +30,7 @@ while True:
         else:
             pass
         sock.sendto(bytes,(ip,port))
+        sent += 1
         print("Sent ", sent , "packets to ",ip,'through',port)
     except KeyboardInterrupt:
         sys.exit()
